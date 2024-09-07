@@ -24,7 +24,7 @@ header{
     height: 100px;
     top: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 9;
     width: 100%;
     
 }
@@ -193,6 +193,7 @@ header a{
 /*PLANES*/
 .planes_container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     text-align: center;
@@ -210,7 +211,7 @@ header a{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 80%;
+    height: 70%;
     width: 30%;
     border-radius: 10px;
 }
@@ -246,6 +247,7 @@ header a{
 }
 .card_price p{
     font-size: 25px;
+    
 }
 .card_price button{
     border-radius: 30px;
@@ -262,9 +264,57 @@ header a{
     color: #ED4545;
 
 }
+.planes__container__text{
+    font-weight: 600;
+    font-family: 24px;
+    color: #ED4545;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.planes__container__text p{
+    margin: 0;
+}
+/*footer*/
+footer{
+    background: rgb(12,42,67);
+    background: linear-gradient(14deg, rgba(12,42,67,1) 7%, rgba(243,240,237,1) 50%, rgba(237,69,69,1) 90%);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    margin: 1%;
+    
+}
+footer .logo{
+    height: 150px;
+}
+.social-icons-contaier{
+    display: flex;
+    gap: 50px;
+    font-size: 30px;
+}
+.footer-menu-container{  
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-weight: 600;
+}
+.copyright{
+font-weight: 500;
+opacity: 0.5;
+}
+
+
+
+
 /* #F3F0ED #0C2A43 #ED4545*/
-/*  hacer que el header baje
+/*  
     animar el descuento
     linkear navbar
-    hover a las cards
-    */
+    
+    agregar transiciones para suavidad
+    /
